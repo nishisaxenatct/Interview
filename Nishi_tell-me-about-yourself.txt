@@ -1,0 +1,27 @@
+Note: In this case The hiring manager is asking you to talk about your professional self. The hiring manager is not at all asking you to talk about yourself in general.
+
+
+I am highly dedicated and aim to win person. I have started off my career 8 year ago as software test engineer and then moved on to sr. software test engineer and now, I'm test lead.
+I have vast experience in Testing domain which includes the Performance testing, Function testing, Regression testing of Web application and Web services i.e. SOAP and Restful. 
+I have good working experience on tools and technology LoadRunner, Jmeter, SoapUI, Dynatrace for Performance Root cause analysis, Linux, SQL(Oracle12g, MySQL), Basic Java, Shell Scripting.
+I have good hands on experience in different software development life cycle models like Agile and Waterfall.
+
+My Current Roles and Responsibilities are: 
+•	Join the Project Kickoff meeting and understand the requirement.
+•	Conduct meeting with the business or development team to identify the scope.
+•	Thorough understanding of business and the infrastructure.
+•	Test Plan creation
+•	Work allocation - Divide work based on modules of the application and choose team members as point of contacts for each module.
+•	Test documentation review- internal
+•	Test documentation review- external: Notify the BA or Product owner/or dev team that the test documentation (test cases) is ready for review and send the work product
+•	Test execution
+•	Reporting
+•	Test closure
+•	UAT 
+
+In this role the major achievements I m proud of is, I have done POC for performance testing tool like Jmeter to reduce the project cost and improve the performance of the system, it is highly appreciated by client and my boss. Also, I have automated manual regression testing suites which has reduces execution time after for production health check. 
+
+I understand for this position of webservices testing you are hiring for you are looking someone with strong knowledge of API testing, I see with my professional background and achievement I m confident that I will be able to succeed in this role you are hiring for.
+
+
+

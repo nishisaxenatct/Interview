@@ -1,0 +1,154 @@
+Q1. what are Agile Scrum Ceremonies or how many meeting in Agile development? 
+	
+	Sprint planning meeting
+	Timebox: Eight hours for a four-week sprint, proportionately shorter for shorter sprints
+	Attendees: The complete Scrum team, including all roles
+	Most important: Team capacity and DoD (Definition of Done)
+	
+	Daily Scrum
+	Timebox: Fifteen minutes is standard, irrespective of the duration of the sprint length
+	Attendees: The complete Scrum team, including all roles
+	Most important: To speak about any impediments
+
+	Sprint review meeting
+	Timebox: Four hours for a four-week sprint, proportionately shorter for shorter sprints
+	Attendees: The complete Scrum team, including all roles, plus any other stakeholders who are interested in the project success
+	Most important: Demo of working software and assessing the feedback
+	
+	Sprint retrospective meeting
+	Timebox: Three hours for a four-week sprint, proportionately shorter for shorter sprints
+	Attendees: The complete Scrum team, including all roles; the product owner's attendance is optional
+	Most important: To brainstorm and agree on what is working and what is not
+
+Q#2. Define the roles in Scrum?
+
+Ans. There are mainly three roles that a Scrum team have:
+
+	Project Owner – who has the responsibility of managing the product backlog. Works with end users and customers and provide proper requirement to the team to build the proper product.
+	
+	Scrum Master – who works with scrum team to make sure each sprint gets complete on time. Scrum master ensure proper work flow to the team.
+	
+	Scrum Team – Each member in the team should be self-organized, dedicated and responsible for high quality of the work.
+
+Q#3. What is Agile Testing?
+Ans. Agile Testing is a practice that a QA follows in a dynamic environment where testing requirements keep changing according to the customer needs. It is done parallel to the development activity where the testing team receives frequent small codes from the development team for testing.
+
+Q#4. How QA can add a value to an agile team?
+Ans. QA can provide a value addition by thinking differently about the various scenarios to test a story. They can provide quick feedback to the developers whether new functionality is working fine or not.
+
+Q#5. How do you calculate a story point?
+Ans: A Story point is calculated by taking into the consideration the development effort+ testing effort + resolving dependencies and other factors that would require to complete a story.
+
+Q#6. Is it possible that you come across different story point for development and testing efforts? In that case how do you resolve this conflict?
+Ans: Yes, this is a very common scenario. There may be a chance that the story point given by the development team is, say 3 but the tester gives it 5. In that case both the developer and tester have to justify their story point, have discussion in the meeting and collaborate to conclude a common story point.
+
+
+Q#7. What is the difference between burn-up and burn-down chart?
+Ans. Burn-up and burn-down charts are used to keep track of the progress of the project.
+	Burn-up charts represent how much work has been completed in any project whereas Burn-down chart represents the remaining work in a project.
+
+Q#8. what is Velocity Chart report?
+Ans: Tracks the amount of work completed from sprint to sprint.
+	This helps you determine your team's velocity, and estimate the work your team can realistically achieve in future sprints.
+
+Q#9. What is the “time Boxing” of a scrum process called?
+Ans: It’s called “Sprint”
+
+Q#10. What should be an ideal duration of a sprint?
+Ans: It is recommended to have 2 – 4 weeks of sprint cycle.
+
+Q#11. How do you measure the work done in a sprint?
+Ans: It’s measured by Velocity.
+
+Q#12. What is Velocity?
+Ans: Velocity is the sum of story points that a scrum team completes (meets the definition of done) over a sprint.
+
+Q#13. What is MVP in scrum?
+Ans: A Minimum Viable Product is a product which has just the bare minimum required feature which can be demonstrated to the stakeholders and is eligible to be shipped to production.
+
+
+Q#14. What is Product backlog & Sprint Backlog?
+Ans. Product backlog is maintained by the project owner which contains every feature and requirement of the product.
+	 Sprint backlog can be treated as subset of product backlog which contains features and requirements related to that particular sprint only.
+
+
+Q#15. Explain the Iterative and Incremental Development in Agile?
+
+Ans. Iterative Development: Software is developed and delivered to customer and based on the feedback again developed in cycles or release and sprints. Say in Release 1 software is developed in 5 sprints and delivered to customer. Now customer wants some changes, then development team plan for 2nd release which can be completed in some sprints and so on.
+
+Incremental Development:Software is development in parts or increments. In each increment a portion of the complete requirement is delivered.
+
+
+Q#16. How do you deal when requirements change frequently?
+
+Ans: Work with PO to understand the exact requirement to update test cases. Also understand the risk in changing the requirement. Apart from this one should be able to write generic test plan and test cases. Don’t go for the automation until requirements are finalized.
+
+Q#17. What qualities should a good Agile tester have?
+Ans.	Agile tester should be able to understand the requirements quickly.
+		Agile tester should know Agile concepts and principals.
+		As requirements keep changing, he should understand the risk involve in it.
+		Agile tester should be able to prioritize the work based on the requirements.
+		Communication is must for a Agile tester as it requires a lot of communication with developers and business associates.
+
+
+Q#18. What is difference between Epic, User stories & Tasks?
+Ans. User Stories:User Stories defines the actual business requirement. Generally created by Business owner.
+	 Task: To accomplish the business requirements development team create tasks.
+	 Epic: A group of related user stories is called an Epic.
+
+
+Q#19. What is Zero sprint in Agile?
+Ans. It can be defined as pre step to the first sprint. Activities like setting development environment, preparing backlog etc needs to be done before starting of the first sprint and can be treated as Sprint zero.
+
+Q#20. What is Spike?
+Ans. There may be some technical issues or design problem in the project which needs to be resolved first. To provide the solution of these problem “Spikes” are created. Spikes are of two types- Functional and Technical.
+
+Q#21. What is importance of daily stand up meeting?
+Ans. Daily stand up meeting is essential for any team in which-
+
+		Team discuss about how much work has been completed.
+		What are the plans to resolve technical issues.
+		What steps need to done to complete the projects etc.	
+
+
+Q#22. what is Definition of Ready (DoR) - Sprint Level? 
+Ans: User stories are defined and Acceptance / Done criteria is clearly stated by PO
+	Story elaboration is done by PO and team clearly understands the story
+	UI/UX Design Available
+	Dependencies identified and all external support (e.g. architect, infrastructure team, SME, 3rd Party support, client team etc.) are arranged (as applicable)
+	Continuous Integration & Deployment  Pipeline available for deployment
+	All IT environments and infrastructure setup available
+ 
+ 
+Q#23. what is Definition of Done(DoD) - Story Level? 
+Ans: As per user story and acceptance criteria, Code Implementation is Completed.
+	Code Review is Completed
+	Test case Creation and Test Case Review is Completed
+	Stroy Testing is Completed
+	Bug fixing is completed
+	Product Owner Review is Completed
+
+
+Q#24. In case you receive a story at the last day of the sprint to test and you find there are defects, what will you do? Will you mark the story to done?
+Ans: A story is done only when it is development complete + QA complete + acceptance criteria is met + it is eligible to be shipped into production. In this case if there are defects, the story is partially done and not completely done, so I will spill it over to next sprint.
+
+
+Q#25. You are in the middle of a sprint and suddenly the product owner comes with a new requirement, what will you do?
+Ans: In ideal case, the requirement becomes a story and moves to the backlog. Then based on the priority, team can take it up in the next sprint. But if the priority of the requirement is really high, then the team will have to accommodate it in the sprint but it has to very well communicated to the stakeholder that incorporating a story in the middle of the sprint may result in spilling over few stories to the next sprint.
+
+
+Q#26 what is Waterfall Model?
+
+The sequential phases in Waterfall model are -
+
+Requirement Gathering and analysis - All possible requirements of the system to be developed are captured in this phase and documented in a requirement specification document.
+
+System Design - The requirement specifications from first phase are studied in this phase and the system design is prepared. This system design helps in specifying hardware and system requirements and helps in defining the overall system architecture.
+
+Implementation - With inputs from the system design, the system is first developed in small programs called units, which are integrated in the next phase. Each unit is developed and tested for its functionality, which is referred to as Unit Testing.
+
+Integration and Testing - All the units developed in the implementation phase are integrated into a system after testing of each unit. Post integration the entire system is tested for any faults and failures.
+
+Deployment of system - Once the functional and non-functional testing is done; the product is deployed in the customer environment or released into the market.
+
+Maintenance - There are some issues which come up in the client environment. To fix those issues, patches are released. Also to enhance the product some better versions are released. Maintenance is done to deliver these changes in the customer environment.

@@ -1,0 +1,11 @@
+
+In an Agile project, the definition of “done” should include the completion of performance testing within a sprint. Only when performance testing within a sprint has been successfully completed can you confidently deliver a successful application to your end users.
+It’s relatively easy to adapt functional testing in the Agile environment. However, adapting performance testing is difficult, as it’s normally expected that the application should be fully developed and functionally stable before performance testing will be conducted on it.
+
+If we would like to introduce or fit performance testing early during the development phase, then we will need to take the points below into consideration:
+
+Performance testing at the code level.
+Performance testing or response time testing for newly developed features during the sprint.
+Performance regression testing for the system integrated with newly developed features.
+
+As soon as the coding starts in an Agile project, performance testing at the coding level can be started in parallel. And upon completion of functional testing of the newly developed feature, it should be performance or response time tested to understand how much time it’s taking to perform its functionality.

@@ -1,0 +1,415 @@
+Q#1. What is SQL?
+Ans: SQL is Structured Query Language designed for inserting and modifying in a relational database system.
+
+Q#2. What are the differences between DDL, DML and DCL in SQL?
+Ans: Following are some details of three.
+	DDL stands for Data Definition Language. SQL queries like CREATE, ALTER, DROP and RENAME come under this.
+	DML stands for Data Manipulation Language. SQL queries like SELECT, INSERT, UPDATE,DELETE TRUNCATE and  come under this.
+	DCL stands for Data Control Language. SQL queries like GRANT and REVOKE come under this.
+
+
+Q#2. What is a transaction? What are ACID properties?
+Ans: A Database Transaction is a set of database operations that must be treated as whole, means either all operations are executed or none of them.
+	An example can be bank transaction from one account to another account. Either both debit and credit operations must be executed or none of them.
+	ACID (Atomicity, Consistency, Isolation, Durability) is a set of properties that guarantee that database transactions are processed reliably.?
+
+Q#4. Differentiate between ‘DELETE’, ‘TRUNCATE’ and ‘DROP’ commands.
+Ans: After the execution of  DELETE operation, COMMIT and ROLLBACK statements can be performed to retrieve the lost data.
+	 After the execution of  TRUNCATE operation, COMMIT, and ROLLBACK statements cannot be performed to retrieve the lost data.
+	 DROP command is used to drop the table or key like the primary key/foreign key.
+
+
+Q#5. What is CRUD?
+Ans: CRUD is an acronym for the four basic types of SQL commands: Create , Read , Update , Delete .
+
+Q#6. What are the differences between primary and foreign keys?
+Ans: The primary key is the column or set of columns used to uniquely identify the items in a table. 
+	 A Foreign keys are used to reference unique columns in another table. So, for example, a foreign key can be defined on one table A, and it can reference some unique column(s) in another table, allowing join operations to happen.
+
+Q#7. Can a table have multiple unique, foreign, and/or primary keys?
+Ans: A table can have multiple unique and foreign keys. However, a table can have only one primary key.
+ 
+ 
+Q#8. What is the difference between primary key and unique constraints?
+Ans: Primary key cannot have NULL value, the unique constraints can have NULL values. 
+	 There is only one primary key in a table, but there can be multiple unique constrains.
+
+
+Q#9.Can a foreign key reference a non-primary key?
+Ans: Yes, a foreign key can actually reference a key that is not the primary key of a table. But, a foreign key must reference a unique key.
+
+
+Q#10. Can a foreign key contain null values?
+Ans: Yes, a foreign key can hold NULL values. Because foreign keys can reference unique, non-primary keys which can hold NULL values. this means that foreign keys can themselves hold NULL values as well.
+
+Q#11. Can a foreign key have different name than a referenced to primary key?
+Ans: Yes, foreign key can have different name than referenced to primary key but it should have same data type as referenced to primary key.
+
+
+Q#12. What is the difference between an inner and outer join?
+Ans: An inner join involves joining two tables where a common id/key exists in both. 
+	 An outer join is the joining of two tables, but where there is no match in the second (or first).
+ 
+Q#13. How many ways we can improve database table performance (read/write)?
+Ans: 	a.	Index
+		b.	Joins (Inner/Outer)
+		c.	Store Procedure
+
+ 
+Q#14.what is database index and how does it work?
+Ans: The index is nothing but a data structure that stores the values for a specific column in a table. An index is created on a column of a table.
+     database index improves the speed of data retrieval operations on a database table at the cost of additional writes and the use of more storage space to maintain the extra copy of data.
+
+	Example, we have a database table called User with three columns – Name, Age, and Address. Assume that the User table has thousands of rows.
+	Now, let’s say that we want to run a query to find all the details of any users who are named ‘John'. If we run the following query.
+
+	SELECT * FROM User 
+	WHERE Name = 'John'
+
+
+	The database software would literally have to look at every single row in the User table to see if the Name for that row is ‘John’. This will take a long time.
+	This is where index helps us "index is used to speed up search queries by essentially cutting down the number of records/rows in a table that needs to be examined".
+	How to create an index
+	
+	CREATE INDEX name_index
+	ON User (Name)
+	
+	An index consists of column values(Eg: John) from one table, and that those values are stored in a data structure.
+	So now the database will use the index to find employees named John because the index will presumably be sorted alphabetically by the Users name. And, because it is sorted, it means searching for a name is a lot faster because all names starting with a “J” will be right next to each other in the index!
+		
+Q#15. what is aggregate function in sql?
+Ans: An aggregate function allows you to perform a calculation on a set of values to return a single scalar value. 
+	We often use aggregate functions with the GROUP BY and HAVING clauses of the SELECT statement.
+
+	The following are the most commonly used SQL aggregate functions:
+	
+	AVG – calculates the average of a set of values.
+	COUNT – counts rows in a specified table or view.
+	MIN – gets the minimum value in a set of values.
+	MAX – gets the maximum value in a set of values.
+	SUM – calculates the sum of values.
+	
+	Notice that all aggregate functions above ignore NULL values except for the COUNT function.
+
+Q#16. what is the difference between having and where clause?
+Ans: HAVING is used to specify a condition for a group or an aggregate function used in select statement. 
+	The WHERE clause selects before grouping. The HAVING clause selects rows after grouping. Unlike HAVING clause, the WHERE clause cannot contain aggregate functions. 
+	
+	Consider the query
+	SELECT Student, Score FROM Marks WHERE Score >=40   {This would select data row by row basis.}
+
+	The having clause works on aggregated data.
+	SELECT Student, SUM(score) AS total 
+	FROM Marks 
+	GROUP BY Student
+	HAVING total > 70
+
+
+Q#17. What is outer joins?
+
+Ans: 
+	1. SQL left outer join
+	SQL left outer join is also known as SQL left join. Suppose, we want to join two tables: A and B. SQL left outer join returns all rows in the left table (A) and all the matching rows found in the right table (B). It means the result of the SQL left join always contains the rows in the left table.
+	Note: Rows which are not matching in right table null values will be displayed.
+	
+
+	select * from employee left outer join location 
+             on employee.empID = location.empID;
+			 
+			
+											Employee.EmpID	 Employee.EmpName	 Location.EmpID	 Location.EmpLoc
+											13	 				Jason	 			13	 			San Jose
+											8	 				Alex	 			8	 			Los Angeles
+											3	 				Ram	 				3	 			Pune, India
+											17	 				Babu	 			17	 			Chennai, India
+											25	 				Johnson	 			NULL	 		NULL
+
+
+	2. SQL right outer join
+	SQL right outer join is also known as SQL right join. Suppose, we want to join two tables: A and B. SQL right outer join returns all rows in the right table (B) and all the matching rows found in the left table (A). It means the result of the SQL right join always contains the rows in the right table.
+	Note: Rows which are not matching in left table null values will be displayed.
+	
+	
+	select * from employee right outer join location 
+	on employee.empID = location.empID;
+	
+											Employee.EmpID	 Employee.EmpName	 Location.EmpID	 Location.EmpLoc
+											13	 				Jason	 			13	 			San Jose
+											8	 				Alex	 			8	 			Los Angeles
+											3	 				Ram	 				3	 			Pune, India
+											17	 				Babu	 			17	 			Chennai, India
+											null	 			null	 			39	            Bangalore, India
+											
+
+Q#18. what is Inner Joins?
+Ans: An inner join will return only the rows that actually match based on the join predicate.
+
+	select * from employee, location
+	where employee.empID = location.empID
+	
+	
+											Employee.EmpID	 Employee.EmpName	 Location.EmpID	 Location.EmpLoc
+											13	 				Jason	 			13	 			San Jose
+											8	 				Alex	 			8	 			Los Angeles
+											3	 				Ram	 				3	 			Pune, India
+											17	 				Babu	 			17	 			Chennai, India
+
+
+											
+
+
+											
+											
+											
+-------------------------------SQL query Questions----------------------------------------
+
+
+Question 1: SQL Query to find second highest salary of Employee
+Answer: There are many ways to find second highest salary of Employee in SQL, you can either use SQL Join or Subquery to solve this problem.
+
+SELECT MAX(Salary)
+FROM Employee
+WHERE Salary <(SELECT MAX(Salary) FROM Employee);
+  
+  
+SELECT Salary
+FROM Employee
+WHERE ROWNUM =2
+ORDER BY Salary DESC;
+
+
+Question 3: Write the SELECT command to display all the records of the employee whose name starts with the character ‘R’.
+Answer: SELECT * from Employee WHERE empName LIKE ‘R%’;
+
+Question 3: Write the SELECT command to display all the records of the employee whose name ends with the character ‘A’.
+Anser:SELECT * from Employee WHERE empName LIKE ‘%A’;
+
+
+Question 4:How to print duplicate rows in a table?
+Ansnwer: 
+		select NAME, count(NAME) as num
+		from Person
+		group by NAME
+		having count(NAME) > 1;
+
+Question 5:How to delete duplicate rows in a table?		
+Answer: DELETE FROM emp a WHERE rowid != (SELECT MAX(rowid) FROM emp b WHERE a.empno=b.empno);
+
+Question 6: Find all Employee records containing the word "Joe", regardless of whether it was stored as JOE, Joe, or joe.
+
+Answer: SELECT * from Employees WHERE UPPER(EmpName) like '%JOE%';
+		
+		
+Question 7: Write an SQL Query to print the name of the distinct employee whose DOB is between 01/01/1960 to 31/12/1975.
+Answer: This SQL query is tricky, but you can use BETWEEN clause to get all records whose date fall between two dates.
+		SELECT DISTINCT EmpName 
+		FROM Employees
+		WHERE DOB  BETWEEN ‘01/01/1960’ AND ‘31/12/1975’;
+
+
+Question 8: Write an SQL Query find number of employees according to gender  whose DOB is between 01/01/1960 to 31/12/1975.
+Anser: 
+	SELECT COUNT(*), sex 
+	from Employees 
+	WHERE DOB BETWEEN '01/01/1960' AND '31/12/1975' GROUP BY sex
+
+
+Question 9: Write an SQL Query to find an employee whose Salary is equal or greater than 10000.
+Answer:
+	SELECT EmpName FROM  Employees WHERE  Salary>=10000;
+
+
+
+Question 10: There is a table which contains two column Student and Marks, you need to find all the students, whose marks are greater than average marks i.e. list of above average students.
+
+Answer: SELECT student, marks from table where marks > S(ELECT AVG(marks) from table)
+
+
+Question 13: How do you find all employees which are also manager? .
+Answer: You need to know about self-join to solve this problem. In Self Join, you can join two instances of the same table to find out additional details as shown below
+
+		SELECT e.name, m.name FROM Employee e, Employee m WHERE e.mgr_id = m.emp_id;
+
+
+
+
+################################--------------------------Sample SQL statements-----------------------------#####################################
+
+--Select query 
+SELECT * FROM suppliers WHERE supplier_name not in ( 'IBM', 'Hewlett Packard', 'Microsoft');
+
+--delete query 
+DELETE FROM suppliers WHERE last_name = 'Anderson' AND customer_id > 25;
+
+---insert query 
+INSERT INTO suppliers (supplier_id, supplier_name) VALUES (24553, 'IBM');
+
+-- update query
+UPDATE suppliers SET JOB=NULL, SALARY=0, BONUS=0, COMM=0 WHERE WORKDEPT = 'E21';
+
+
+
+
+--###  CREATE a table ###---
+
+CREATE TABLE employees
+( 	employee_number number(10) 	not null,
+  	employee_name 	varchar2(50) 	not null,
+  	department_id 	number(10), 	
+  	salary 	number(6), 	
+  	CONSTRAINT employees_pk PRIMARY KEY (employee_number)
+  	
+); 	
+
+
+CREATE TABLE SUPPLIER
+( supplier_id 	numeric(10) 	not null,
+	supplier_name 	varchar2(50) 	not null,
+	contact_name 	varchar2(50), 	
+	CONSTRAINT supplier_pk PRIMARY KEY (supplier_id)
+);
+
+
+
+--child table
+CREATE TABLE products
+( 	product_id 	numeric(10) 	not null,
+	supplier_id 	numeric(10) 	not null,
+	CONSTRAINT fk_supplier FOREIGN KEY (supplier_id) REFERENCES supplier(supplier_id)
+	
+);
+
+
+--child table
+CREATE TABLE products
+( 	product_id 	numeric(10) 	not null,
+	Id 	numeric(10) 	not null,
+	CONSTRAINT fk_supplier FOREIGN KEY (Id) REFERENCES supplier(supplier_id)
+	
+);
+
+
+---------Unique Constraints--------
+
+--A unique constraint is a single field or combination of fields that uniquely defines a record. Some of the fields can contain null values as long as the combination of values is unique.
+
+CREATE TABLE supplier
+( 	supplier_id 	numeric(10) 	not null,
+	supplier_name 	varchar2(50) 	not null,
+	contact_name 	varchar2(50), 	
+	CONSTRAINT supplier_unique UNIQUE (supplier_id, supplier_name)
+)
+
+CREATE TABLE supplier
+( 	supplier_id 	numeric(10) 	not null,
+	supplier_name 	varchar2(50) 	not null,
+	contact_name 	varchar2(50), 	
+	CONSTRAINT supplier_unique UNIQUE (supplier_id)
+)
+
+
+--child table
+CREATE TABLE products
+( 	product_id 	numeric(10) 	not null,
+	Id 	numeric(10) 	not null,
+	CONSTRAINT fk_supplier FOREIGN KEY (Id) REFERENCES supplier(supplier_id)
+	
+);
+
+----ORDER BY Clause
+
+SELECT columns
+FROM tables
+WHERE predicates
+ORDER BY column ASC/DESC;
+
+--ASC indicates ascending order. (default)
+--DESC indicates descending order.
+
+
+--You can also sort by relative position in the result set, where the first field in the result set is 1. The next field is 2, and so on.
+
+    SELECT supplier_city
+    FROM suppliers
+    WHERE supplier_name = 'IBM'
+    ORDER BY 1 DESC
+
+
+----HAVING Clause
+--The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
+--aggregate functions
+--AVG – calculates the average of a set of values.
+--COUNT – counts rows in a specified table or view.
+--MIN – gets the minimum value in a set of values.
+--MAX – gets the maximum value in a set of values.
+--SUM – calculates the sum of values.
+
+SELECT department, SUM(sales) as "Total sales"
+FROM order_details
+GROUP BY department
+HAVING SUM(sales) > 1000;    
+    
+ --------------------   
+	
+    Select COUNT(*)
+	FROM
+    products;
+--------------------------------
+
+	SELECT 
+    AVG(unitsinstock)
+	FROM
+    products;
+	
+	----------------------
+	SELECT 
+    categoryid, AVG(unitsinstock)
+	FROM products
+   GROUP BY categoryid;
+   
+ ---------------  
+   SELECT 
+    categoryid, SUM(unitsinstock)
+FROM
+    products
+GROUP BY categoryid;
+----------
+
+SELECT 
+    MIN(unitsinstock)
+FROM
+    products;
+	
+----SELECT 
+    MAX(unitsinstock)
+FROM
+    products;
+	
+		
+-----BETWEEN Condition
+
+
+SELECT * 
+FROM suppliers
+WHERE supplier_id between 5000 AND 5010;
+
+
+
+SELECT *
+FROM suppliers
+WHERE supplier_id not between 5000 and 5500;
+
+
+-----In Condition and no in
+
+SELECT *
+FROM suppliers
+WHERE supplier_name in ( 'IBM', 'Hewlett Packard', 'Microsoft');
+
+
+
+
+
+
+
+
