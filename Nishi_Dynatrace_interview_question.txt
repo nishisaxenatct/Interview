@@ -1,0 +1,66 @@
+Q#1. What is Dynatrace? How is it different from other APM tools?
+Ans: Dynatrace is Application performance Monitoring (APM) tool which helps developers, testers and operations to ensure their applications work fast and reliable. 
+	
+	The core technology of the product is its PurePath Technology  which allows to trace every single transaction (like a web request, user interaction, batch jobs etc.) from end-to-end (browser to database). 
+	
+	Dynatrace is also monitoring your whole infrastructure and with that set of informations let  you to figure out if there are any application performance problems and if they're related to infrastructure (virtual or physical), app server, web server, app code, database or any other tier.
+
+Q#2. How does Dynatrace work?
+Ans: Dynatrace server should be installed on your system and it consists of host and agent . It has a dashboard through which we can diagnose our system on one place.
+	
+
+
+Q#3. what are Benefits of Dyntrace?
+Ans:
+	For Testing you should have lot of data and through which you can check your system health such as CPU, Memory, Disk and Network Utilization,Storage Problems.
+	it's PurePath Technology  which allows to trace every single transaction (like a web request, user interaction, batch jobs etc.) from end-to-end (browser to database). 
+	We can also look into the problem which are captured in dynatrace and then we can resolve those.
+	With the help of it, developers and testers can ensure that their application works fast and is reliable.
+	We can capture the issues before client complains about the same.
+	
+	
+	
+Q#4. what are commons Application Performance Issues you have seen?
+Ans:
+
+#1 - Poorly written code ( Ex. Not closing data base connecion after use or unncessary object creation etc.)
+
+#2 - Slow SQL Statement 
+Root Cause: Slow JDBC query with full-table scan (indexing is not done properly)
+
+#3 - Slow Web Service Calls 
+Root Cause: Excessive Web Service Invocation (5+ per trx)
+
+#4 - Extreme XML processing 
+Root Cause: XML serialization over the wire.
+
+#5 - Excessive SQL Queries 
+Root Cause: Thousands of SQL queries per transaction
+
+#6- Slow Result Set Iteration
+Root Cause: Querying too much data
+
+#7 - Lack of load balancing
+
+
+Q#5. How will you diagnose the problem if response time has degraded with your external services?
+Ans: 
+	1.  I will check whether any recent changes were made to the application in production. Changes could be:
+		New Code Deployment
+		OS patches, Kernel Setting changes
+		Network/Firewall settings changes
+		Installation of any monitoring tools/agents in the production environment
+		JVM setting changes…
+	
+	2. I will take thread dump on the application and analyze them to see whether there are any thread related locking/waiting is happening. or Heap dump.
+	
+	3. If no changes has been made on our side, then I will confirm with external services provider whether any changes has been made on them.
+
+	4. If there are no problem with the external service provider as well, then problem could be in the environment or Network. I will reach out to my service provider.
+	
+
+Q#6. What tools are used to do analyze network issues?
+Ans: Wireshark is a *great* network protocol analyzer for Unix and Windows. It’s a free tool. It can be used for capturing data at packet level and analyze them.
+
+
+
