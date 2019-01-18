@@ -1,0 +1,216 @@
+Q#1. What were your roles and responsibilities?
+
+Ans :
+Project Kickoff- Start : understand the requiremnt 
+
+Test Planning:	Create, Maintain, manage and enforce Test plan Risk analysis and management
+
+Test scenario creation : 
+			Work allocation - Divide work based on modules of the application and choose team members as point of contacts for each module.
+			Query resolution
+			Template finalizing
+			Setting deadlines
+			Write test cases
+			Participating and contributing to test scenario creation
+
+
+Test documentation review- internal:    Set rules on what basis the review is to happen	
+										Set time lines and responsibilities
+										Be one of the peers and involve in the review process
+
+Test documentation review- external: Notify the BA or Product owner/or dev team that the test documentation(test cases) is ready for review and send the work product
+
+Test execution:   Set test execution guidelines after seeking the team’s inputs
+				  Work on test execution
+		          Help new testers with catching on with the current application
+		          Report defects
+
+Reporting:	Send daily status reports to all stake holders
+		    Represent the QA team in any status meetings
+		    Collect metrics based on overall testing statistics
+
+Test closure:   Evaluate the exit criteria for when to stop testing
+                Share the results of the exit criteria evaluation
+                If the exit criteria is all satisfied, make the test closure report and send it to the stake holders providing the official QA sign off, include a list of known issues
+                Collect details about the overall project- its successes, areas of improvement, lessons learnt, best practices implemented, etc and present them in the project retrospection meeting or document.
+                Review the defects reported by the team members to make sure that they are valid, not duplicates and complete in the description
+                Escalate any showstoppers and make decisions on how to proceed in such situations
+
+UAT : 	Gather the acceptance criteria from the UAT users to understand the parameters for their evaluation
+		Share the acceptance criteria with the team and work with them on collecting or creating UAT test cases
+		If necessary, train the UAT users on the application
+		If necessary, be on standby for any assistance during UAT
+		If necessary, perform some tasks during UAT and present the results to the client or UAT users for their go/no-go decision
+		
+		
+
+Q#2. How was your time divided between tasks in a project?
+Ans: 
+	40%- Testing activities- depending on the stage the project is in, this might be tested planning, design or execution
+	30%- review
+	10%- coordination
+	20%- client communication and delivery management
+	
+Q#3. Have you been involved in test estimation and how do you do it?
+Ans: Test estimation gives an approximate idea of how much time and effort (inculding all kind of Risk and dependencies)are required to test.
+	List of Software Test Estimation Techniques are - 
+		1. Work Breakdown Structure (WBS) - Breaking down the test project into smaller modules.
+		2. Three-point estimation - A) best case estimate, B) the most likely estimate and C) the worst-case estimate.
+			The best case to complete this task is 120 man-hours (around 15 days). In this case, you have a talented team, they can finish the task in smallest time.
+			The most likely case to complete this task is 170 man-hours (around 21 days). This is a normal case, you have enough resource and ability to complete the task
+			The worst case to complete this task is 200 man-hours (around 25 days). You need to perform much more work because your team members are not experienced.
+		
+Q#4. what are Test estimation best practices?
+Ans: 
+	1. Add some buffer time: Many unpredictable things may happen to your project, such as a talented team member quits his job suddenly, the testing takes more time than estimated to complete… etc. 
+	
+	2.Account Resource planning in estimation: What should you do if some members in your team take long leaves? It may delay the project.Resource planning in estimation plays a key role. The availability of resources will help to make sure that the estimations are realistic. 
+	
+	3.Use the past experience as reference: Experiences from past projects play a vital role while preparing the time estimates. Because some project may be some similarity, you can reuse the past estimation. For example, if you use to do a project like testing a website, you can learn from that experience, try to avoid all the difficulties or issues that were faced in past projects.
+	
+	4. Considering the Bug Lifecycle – this includes defects retesting, regression and smoke testing time frames.
+	
+	
+Q#5. How would you select a Testing tool for your project?
+Ans: 
+	1. Identify features required in an automation tool as per the project needs
+	2. Evaluate commercial and noncommercial tools that meet the requirements
+	3. Estimate cost and benefit of the tool. Cost could include licenses and training.
+	4. Make the final decision in consultation with team members.
+
+Q#5. What does a good test report include?
+Ans: Project Information
+	Test Objective
+	Test Summary - Total No of Test Cases, No of test case executed, pass, fail, block
+	Defect - Open, Closed, In-progress
+
+
+Q#6. Mention what Requirement Traceability Matrix is?
+Ans: Requirement Traceability Matrix is linking of requirement documents to test cases.
+	 It is used for the following reason
+		To ensure that all the application requirements are tested in the verification process
+		To check Test Coverage
+	
+
+
+Q#7.By what factors you can determine the quality of the test execution?
+Ans: 
+	(A) Defect Leakage (to the next upper environment) = Total number of defects identified in next upper environment / Total number of defects identified (in lower + next upper environments)
+
+	(B) Defect Rejection Ratio = Total number of defects rejected / Total number of defects (valid + rejected)
+	
+
+Q#8. How will you manage Team Conflicts?
+Ans: 
+	1. Don't confuse feeling with reality 
+	2. Be creative 
+	3. Remind the team that differences of opinion are use full for the team. 
+	4. Keep communication open for everyone such that the team frustrations and anger are vented out. 
+	5. make sure work is diveded properly.
+	6. Motivate the team.
+	7. Lastly, ask the team members to co-operate and stress the importance of their cooperation for the success of the project.
+
+
+Q#9. Name a negative situation I was in and how did I handle it. 
+Ans: 
+
+	Late one Friday afternoon at my last job, a client called with an urgent question about the project we were working on for them. My boss usually handles all client contact directly, but he had already left for the weekend. 
+	I explained the situation to the client, and said that although I might not know the exact answer to the question, that I was also working on the project and might be able to help. That was good enough for the client, and while it was true that I didn’t have the answer immediately, we were able to work through it together fairly quickly, and the client got off the call assured that they wouldn’t need to worry about the issue over the weekend. 
+	I also left a note for my boss about the call, so that he could check with the client on his return on Monday morning.
+
+	One person stoped working and even stop coming to office on time and started taking unplaned leaves.
+	1. distriube his/her work in other team members (or take a loaner/new resource)so that project delivery is not impacted. 
+	2. set a one to one meeing with resource and listen his problem and try to solve. if not then set up a meeting with manager.  
+
+
+
+Q#10. if as a test lead you find some issues a day before the release date. what you will do?
+Ans: QA can “assist” business side with information about quality and process.
+	Deciding to release with severe bug (and escalate next release with a fix) or postpone release is business decision. It can be done only by someone who understands how customer works.
+ 
+
+Q#11. What would you do if management asks you to approve a release with critical defects?
+     No, We should not release the application with critical defects. Make sure the management team how the impact of the critical defects in the application without fixing and quality of the product not guaranteed.
+
+Q#12. Have you had a defect that was found by a customer that should have been caught during the testing phase? If so, how did you handle the escaped defect.
+Ans: I followed up with the customer and asked how they discovered the defect. I then determined what part of the troubleshooting process we missed that would have revealed the defect to us.
+
+
+Q#13.Have you had a defect that was found by a customer that should have been caught during the testing phase? If so, how did you handle the escaped defect.
+Ans: I followed up with the customer and asked how they discovered the defect. I then determined what part of the troubleshooting process we missed that would have revealed the defect to us.
+
+Q#14.How do you know that your testing covered all the functionality?
+Ans:
+	1. Look at the business requirements and traceability to your test cases. If you are maintaining your traceabilty matrix accurate you will get the answer to the question 
+    regarding the coverage of test.
+    
+	2. Sometimes we use different coverage techniques for different type of requirements based on the test design, in that case you have to make sure all the coverage techniques are implimented/designed properly. 
+	
+
+Q#15. What do you think of test leads writing test cases?
+Ans: I feel that the test lead should be expected to write test cases like any other member of the team.
+
+Q#16. What are the ways you ensure that the team members receive proper training?
+Ans. Get feedback from all the team members on their strengths and weaknesses to make a note of what type of training is necessary for the team. Also, new members who join the team should be trained on time so as to be inducted as quickly as possible.
+
+Q#17. What will be your criteria for hiring team members?
+ Ans. While hiring a team member, three things should be considered: 
+	1)his technical strength as per project requirements, 
+	2) his attitude towards the profile he will be hiring for and 
+	3) will he be a good fit with the rest of the team members?
+
+Q#18. What are the good practices that you follow?
+Ans. Some of the good practices for a successful project are:
+	1. proper documentation process, 
+	2. high standards of reviewing, 
+	3. recognition to outstanding performers, 
+	4. focusing on team building 
+	5. making sure there is a continuous scope of learning.
+	
+
+Q#19. What are your key achievements in your current organisation?
+Ans:
+	1. completed a project well before the deadline
+	2. managed a difficult project with great efficiency
+	
+Q#20. What are informal reviews? Do you document informal reviews?
+Ans. An informal review is a process of checking defects without looking at test cae. No, documentation is not required for informal reviews.
+
+
+Q#21. Mention the types of Risk in a Test Project?
+Ans: The types of Risk in a Test Project can be broadly categorized as
+
+	Strategy Risk: This includes Budget, Communication and Management risks
+	Project Definition Risks: This includes Project target, Scope, and requirements risks.
+	Human Resources Risk: This includes Skill, Team members and organization risks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
