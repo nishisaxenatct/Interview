@@ -185,6 +185,97 @@ Ans: The types of Risk in a Test Project can be broadly categorized as
 	Human Resources Risk: This includes Skill, Team members and organization risks.
 
 
+	
+Q#22. what are Test deliverables?
+Ans: Test Deliverables are the artifacts which are given to the stakeholders of software project during the software development lifecycle. There are different test deliverables at every phase of the software development lifecycle. Some test deliverables are provided before testing phase, some are provided during the testing phase and some after the testing cycles is over.
+
+	Test cases Documents
+	Test Plan
+	Testing Strategy
+	Test Scripts
+	Test Data
+	Test Trace-ability Matrix
+	Test Results/reports
+	Test summary report
+	Install/config guides
+	Defect Report
+	Release notes
+	Recommendations on how to improve performance. 
+	
+
+Q#23 . What was the approach to resolving Software Performance problems that you had encountered in the past?
+Ans: 
+	1. Resolve high CPU usage.
+		The common reason for high CPU usage is loop in the code. Possible causes of a loop that does not terminate are:
+		The termination condition can never occur.
+		The code never tests for the termination condition.
+		When the termination condition is met, the conditional branch causes the loop to be performed again.
+	
+	2.Poorly written code
+		Another web application performance problem that many face is with poorly written code, which could refer to inefficient code, memory leaks, or synchronization issues. 
+		Your application could also deadlock due to ineffectual algorithms, as well as the performance degradation of a web application.
+		
+		You can tackle this issue by ensuring that your developers are using the optimal coding practices, as well as some automated tools such as profilers and code reviews.
+		
+	3. Lack of load balancing
+		Tools such as NeoLoad and AppPerfect help you find infrastructural weaknesses that you may be experiencing, while also testing problem areas. 
+		
+	
+	4. DNS issues and network connectivity
+	  The best way to tackle these issues is by implementing DNS monitoring to identify what’s causing them. we used to reach out to infrastructure team. 
+
+
+Q#24. How to Diagnose Memory Leaks?
+Ans: 
+	Checking for Leaks:	There are a number of telltale signs that an application is leaking memory.
+		Maybe it's throwing an OutOfMemoryException.
+		Maybe memory use is gradually (or not so gradually) increasing in Task Manager.
+		
+		To Diagnose
+		Step 1: Capture Baseline Heap Dump
+		Step 2: Capture Troubled Heap Dump
+		
+		Step 3: Compare Heap Dumps - Objects which are causing memory leaks grow over the period. If you can the identify objects whose size has grown between the heap dumps captured in step #1 and step #2, then those are the objects which are causing memory leak.
+		
+		Note: Compare Heap Dumps Using Java VisualVM.
+	  
+Q#24: what are load balancing Algorithms?
+Ans:
+	Round Robin - In this algorithm, the load balancer sends a request to a server and then moves on to the next one. It keeps following this process in a round robin manner. It's a useful method if all your servers have similar processors and memories.
+	
+	Least Connection Method - Load balancers direct traffic to the server that has the fewest connections with the assumption that this server will have the most resources available.
+	
+	
+	Least Response Time Method - Load balancers take into account both the connections and the response time. The server with the fewest connection and the lowest average response time is given priority. This algorithm can be useful when you have servers with uneven processing power and memory resources. The algorithm allows you to use the most powerful servers while depending on the weaker ones during high volume requests.
+	
+
+Q#24: when do you think performance testing is required for existing applcation? 
+Ans: 1. When new API is implemented.
+	 2. New UI changes intraduced.
+	 3. Data base migration or new tables creation.
+
+
+@#25. what is the pros and cons of performance testing in Agile development?
+Pros
+	Minimize risk.
+	Obtain early, constant feedback.
+	Learn about best practices as you go and over time, continuously improve. 
+	Facilitate continuous integration.
+Cons:
+	It requires more automation effort in writing and maintaining scripts.
+	Problems may arise if you automate too little or too much at certain levels. For example, it’s best to automate as many unit performance tests as possible, have some at the API level, and only automate the most critical test cases at the GUI level. 
+	
+
+Q#26: what is the main goal of performance testing or what is the Important Metrics for performance testing? 
+Ans: Scalability , High Speed and Stability  - This is called 3S. :) 
+		Scalability - Find out the maximum user load the precise software app can handle.
+		High Speed - Examine and evaluate whether the software application responds fast
+		Stability - Find out if the application is stable under varying loads
+
+
+
+
+	
 
 
 
